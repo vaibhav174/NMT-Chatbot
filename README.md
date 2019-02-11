@@ -19,13 +19,13 @@ Setup
 Steps to setup project for your needs:
 It is *highly* recommended that you use Python 3.6+. Python 3.4 and 3.5 is likely to work in Linux, but you will eventually hit encoding errors with 3.5 or lower in a Windows environment.
 
- 1. ```$ git clone --recursive https://github.com/daniel-kukiela/nmt-chatbot```
- 2. ```$ cd nmt-chatbot```
+ 1. ```$ git clone https://github.com/vaibhav174/NMT-Chatbot```
+ 2. ```$ cd NMT-chatbot```
  3. ```$ pip install -r requirements.txt``` Tensorflow-gpu is one of the requirements. You also need CUDA Toolkit 8.0 and cuDNN 6.1. (Windows tutorial: https://www.youtube.com/watch?v=r7-WPbx8VuY  Linux tutorial: https://pythonprogramming.net/how-to-cuda-gpu-tensorflow-deep-learning-tutorial/)
  4. ```$ cd setup```
  5. (optional) edit settings.py to your liking. These are a decent starting point for ~4GB of VRAM, you should first start by trying to raise vocab if you can. 
  6. (optional) Edit text files containing rules in setup directory
- 7. Place training data inside "new_data" folder (train.(from|to), tst2012.(from|to)m tst2013(from|to)). We have provided some sample data for those who just want to do a quick test drive. 
+ 7. Place training data inside "new_data" folder (train.(from|to), tst2012.(from|to)m tst2013(from|to)). 
  8. ```$ python prepare_data.py``` ...Run setup/prepare_data.py - new folder called "data" will be created with prepared training data
  9. ```$ cd ../```
  10. ```$ python train.py``` Begin training
